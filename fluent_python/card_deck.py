@@ -21,8 +21,11 @@ class FrenchDeck:
 if __name__ == '__main__':
   deck = FrenchDeck()
   assert len(deck) == 52
-
-  assert deck[:3] == [Card(rank='2', suit='spades'), Card(rank='3', suit='spades'), Card(rank='4', suit='spades')]
+  assert deck[:3] == [
+    Card(rank='2', suit='spades'),
+    Card(rank='3', suit='spades'),
+    Card(rank='4', suit='spades')
+  ]
 
   #for card in reversed(deck):
   #  print(card)
